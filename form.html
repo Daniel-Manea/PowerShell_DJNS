@@ -6,12 +6,12 @@
     <style>
         body {
             font-family: Calibri, Helvetica, sans-serif;
-            background-color: pink;
+            background-color: rgb(206, 206, 206);
         }
 
         .container {
             padding: 50px;
-            background-color: lightblue;
+            background-color: rgb(255, 255, 255);
         }
 
         input[type=text],
@@ -21,13 +21,18 @@
             padding: 15px;
             margin: 5px 0 22px 0;
             display: inline-block;
-            border: none;
-            background: #f1f1f1;
+            border-color: #ff3300;
+            border-radius: 10rem;
+            background: #ffffff;
+        }
+
+        ::placeholder {
+            color: rgb(0, 0, 0);
         }
 
         input[type=text]:focus,
         input[type=password]:focus {
-            background-color: orange;
+            background-color: rgba(255, 112, 76, 0.621);
             outline: none;
         }
 
@@ -35,17 +40,25 @@
             padding: 10px 0;
         }
 
+
+        select {
+            border-radius: 10rem;
+            padding: 5px 10px;
+            background-color: rgb(255, 255, 255);
+        }
+
         hr {
-            border: 1px solid #f1f1f1;
+            border: 1px solid #000000;
             margin-bottom: 25px;
         }
 
         .registerbtn {
-            background-color: #4CAF50;
+            background-color: #ff3300;
             color: white;
             padding: 16px 20px;
             margin: 8px 0;
             border: none;
+            border-radius: 10rem;
             cursor: pointer;
             width: 100%;
             opacity: 0.9;
@@ -61,58 +74,50 @@
     <form id="userForm">
         <div class="container">
             <center>
-                <h1>AARHUS TECH Users</h1>
+                <h1>AARHUS TECH USERS REGISTRATION</h1>
             </center>
             <hr>
-            <label> Firstname </label>
+
             <input id="name" type="text" name="firstname" placeholder="Firstname" size="15" required />
-            <label> Lastname: </label>
             <input id="surname" type="text" name="lastname" placeholder="Lastname" size="15" required />
-            <label> Job-title: </label>
-            <input id="title" type="text" name="job-title" placeholder="Job-title" size="15" required />
             <div>
                 <label>
                     Department :
                 </label>
 
-                <select id="department" required>
+                <select id="department" name="department" required>
                     <option value="">...</option>
-                    <option value="Direktion">Direktion</option>
-                    <option value="Marketing og kommunikation">Marketing og kommunikation</option>
-                    <option value="It-strategi">It-strategi</option>
-                    <option value="Økonomi og personale">Økonomi og personale</option>
-                    <option value="It-drift og support">It-drift og support</option>
-                    <option value="Kantiner Aarhus N, Viby og Tilst">Kantiner Aarhus N, Viby og Tilst</option>
-                    <option value="Intern service">Intern service</option>
-                    <option value="Direktion">Bygningsafdelingen</option>
-                    <option value="Direktion">AARHUS TECH Unge</option>
-                    <option value="Direktion">Skolekontakt og rekruttering</option>
-                    <option value="Direktion">Unge | Kvalitet og udvikling</option>
-                    <option value="Direktion">Studieservice</option>
-                    <option value="Direktion">AARHUS TECH Erhverv</option>
-                    <option value="Direktion">Uddannelses- og praktikcenter</option>
-                    <option value="Direktion">Erhverv | Kvalitet og udvikling</option>
-                    <option value="Direktion">AARHUS GYMNASIUM, Aarhus C</option>
-                    <option value="Direktion">AARHUS GYMNASIUM, Tilst</option>
-                    <option value="Direktion">AARHUS GYMNASIUM, Syd</option>
-                    <option value="Direktion">Direktion</option>
-                    <option value="Direktion">Direktion</option>
+                    <option value="DIREKTION">DIREKTION</option>
+                    <option value="UNG">AARHUS TECH Unge</option>
+                    <option value="ERHV">AARHUS TECH Erhverv</option>
 
                 </select>
             </div>
             <div>
                 <label>
-                    Sub-Department :
+                    Job Title:
                 </label>
 
-                <select id="subdepartment">
+                <select id="title" name="job-title" required>
                     <option value="">...</option>
-                    <option value="Direktion">Direktion</option>
-                    <option value="Marketing og kommunikation">Marketing og kommunikation</option>
-                    <option value="B.Tech">B.Tech</option>
-                    <option value="MBA">MBA</option>
-                    <option value="MCA">MCA</option>
-                    <option value="M.Tech">M.Tech</option>
+                    <option value="Direktør">Direktør</option>
+                    <option value="Rectør">Rektør</option>
+                    <option value="Leder">Leder</option>
+                    <option value="Lærer">Lærer</option>
+                </select>
+            </div>
+            <div id="subdep_container" style="display: none;">
+                <label>
+                    Sub-Department :
+                </label>
+                <select id="subdepartment" name="subdepartment" required>
+                </select>
+            </div>
+            <div id="subject_container" style="display: none;">
+                <label>
+                    Subject :
+                </label>
+                <select id="subject" name="subject">
                 </select>
             </div>
             <!-- <label for="psw"><b>Password</b></label>
@@ -122,7 +127,9 @@
             <input id="password" type="password" placeholder="Retype Password" name="psw-repeat" required> --->
             <button id="register" class="registerbtn" type="button">Register</button>
     </form>
-    <script type="module" src="/exportUsers.js"></script>
+    <script type="module" src="functions/exportUsers.js"></script>
+    <script type="module" src="functions/subdepartments.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
 </body>
 
 </html>
