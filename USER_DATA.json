@@ -1,0 +1,183 @@
+[
+  {
+    "GivenName": "Annette",
+    "Surname": "Ernst Lauridsen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "DIREKTION",
+    "Confirm": true,
+    "Title": "Direktør",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Lasse",
+    "Surname": "Munk Madsen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "DIREKTION",
+    "Confirm": true,
+    "Title": "Direktør",
+    "SubDepartment": ""
+  },
+
+  {
+    "GivenName": "Lotte",
+    "Surname": "Waltersdorff-Lassen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Marketing og kommunikation",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Tanja",
+    "Surname": "Tammi Damsø Pedersen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "It-strategi",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Frank",
+    "Surname": "Stender",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Økonomi og personale",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Lars",
+    "Surname": "Lisberg Nielsen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "It-drift og support",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Lena",
+    "Surname": "Møller",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "It-drift og support",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Helle",
+    "Surname": "Susanne Jespersen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Kantiner Aarhus N, Viby og Tilst",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Lone",
+    "Surname": "Møldrup",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Intern service",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Simon",
+    "Surname": "Nádházi",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Bygningsafdelingen",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Peter",
+    "Surname": "Grønlykke",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "AARHUS TECH Unge",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Chester",
+    "Surname": "Folming",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "AARHUS TECH Erhverv",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Thomas",
+    "Surname": "Sand Skipperng",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Skolekontakt og rekruttering",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Jesper",
+    "Surname": "Broch Holm",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Kvalitet og udvikling",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Inger",
+    "Surname": "Karlshøj Broholm",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Studieservice",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Jimmi",
+    "Surname": "Bakkegaard Ludvigsen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Uddannelses-  og praktikcenter",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Søren",
+    "Surname": "Berg Knudsen",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Kvalitet og udvikling",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  },
+  {
+    "GivenName": "Pia",
+    "Surname": "Behrens Gammelgaard",
+    "AccountPassword": "DataIt2022!",
+    "Enabled": true,
+    "Department": "Studieservice",
+    "Confirm": true,
+    "Title": "Leder",
+    "SubDepartment": ""
+  }
+]

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: pink;
+        }
+
+        .container {
+            padding: 50px;
+            background-color: lightblue;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+        }
+
+        input[type=text]:focus,
+        input[type=password]:focus {
+            background-color: orange;
+            outline: none;
+        }
+
+        div {
+            padding: 10px 0;
+        }
+
+        hr {
+            border: 1px solid #f1f1f1;
+            margin-bottom: 25px;
+        }
+
+        .registerbtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 16px 20px;
+            margin: 8px 0;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+            opacity: 0.9;
+        }
+
+        .registerbtn:hover {
+            opacity: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="userForm">
+        <div class="container">
+            <center>
+                <h1>AARHUS TECH Users</h1>
+            </center>
+            <hr>
+            <label> Firstname </label>
+            <input id="name" type="text" name="firstname" placeholder="Firstname" size="15" required />
+            <label> Lastname: </label>
+            <input id="surname" type="text" name="lastname" placeholder="Lastname" size="15" required />
+            <label> Job-title: </label>
+            <input id="title" type="text" name="job-title" placeholder="Job-title" size="15" required />
+            <div>
+                <label>
+                    Department :
+                </label>
+
+                <select id="department" required>
+                    <option value="">...</option>
+                    <option value="Direktion">Direktion</option>
+                    <option value="Marketing og kommunikation">Marketing og kommunikation</option>
+                    <option value="It-strategi">It-strategi</option>
+                    <option value="Økonomi og personale">Økonomi og personale</option>
+                    <option value="It-drift og support">It-drift og support</option>
+                    <option value="Kantiner Aarhus N, Viby og Tilst">Kantiner Aarhus N, Viby og Tilst</option>
+                    <option value="Intern service">Intern service</option>
+                    <option value="Direktion">Bygningsafdelingen</option>
+                    <option value="Direktion">AARHUS TECH Unge</option>
+                    <option value="Direktion">Skolekontakt og rekruttering</option>
+                    <option value="Direktion">Unge | Kvalitet og udvikling</option>
+                    <option value="Direktion">Studieservice</option>
+                    <option value="Direktion">AARHUS TECH Erhverv</option>
+                    <option value="Direktion">Uddannelses- og praktikcenter</option>
+                    <option value="Direktion">Erhverv | Kvalitet og udvikling</option>
+                    <option value="Direktion">AARHUS GYMNASIUM, Aarhus C</option>
+                    <option value="Direktion">AARHUS GYMNASIUM, Tilst</option>
+                    <option value="Direktion">AARHUS GYMNASIUM, Syd</option>
+                    <option value="Direktion">Direktion</option>
+                    <option value="Direktion">Direktion</option>
+
+                </select>
+            </div>
+            <div>
+                <label>
+                    Sub-Department :
+                </label>
+
+                <select id="subdepartment">
+                    <option value="">...</option>
+                    <option value="Direktion">Direktion</option>
+                    <option value="Marketing og kommunikation">Marketing og kommunikation</option>
+                    <option value="B.Tech">B.Tech</option>
+                    <option value="MBA">MBA</option>
+                    <option value="MCA">MCA</option>
+                    <option value="M.Tech">M.Tech</option>
+                </select>
+            </div>
+            <!-- <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" required>
+
+            <label for="psw-repeat"><b>Re-type Password</b></label>
+            <input id="password" type="password" placeholder="Retype Password" name="psw-repeat" required> --->
+            <button id="register" class="registerbtn" type="button">Register</button>
+    </form>
+    <script type="module" src="/exportUsers.js"></script>
+</body>
+
+</html>
