@@ -1,4 +1,4 @@
-﻿function New-DJUsers {
+function New-DJUsers {
 [CmdletBinding()]
 param (
    # [Parameter(Mandatory)]
@@ -6,10 +6,9 @@ param (
 )
 
 try { 
-    
-    $mockData = Get-Content -Path C:\Users\Niro\Downloads\MOCK_DATA.json | ConvertFrom-Json
-    
 
+    $response = Invoke-WebRequest -URI 'https://djns-dc35c-default-rtdb.europe-west1.firebasedatabase.app/users.json'
+    $mockData = $response.Content | ConvertFrom-Json
     
     for ($i = 0; $i -lt $mockData.count; $i++) {  
         $vari = "" 
